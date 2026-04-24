@@ -32,8 +32,8 @@ const Landing = () => {
 
             <div className="landing-hero-text">
 
-                <h1>IQbrain: Freelance intelligence with dark green glow design</h1>
-                <p>Build smarter projects, hire faster talent, and manage work with a sleek green-and-black dashboard designed for modern freelancers and clients.</p>
+                <h1>IQbrain: Freelance intelligence </h1>
+                <p>Build smarter projects, hire faster talent, and manage work with a sleek AI intelligence platform.</p>
                 <button onClick={()=> navigate('/authenticate')}>Join Now</button>
             </div>
 
