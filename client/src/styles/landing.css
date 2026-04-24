@@ -1,0 +1,94 @@
+.landing-page{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, rgba(0,255,138,0.16), transparent 20%),
+                linear-gradient(180deg, #020202 0%, #0d130d 100%);
+}
+
+.landing-hero{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(circle at top right, rgba(0,255,138,0.12), transparent 20%),
+                radial-gradient(circle at bottom left, rgba(0,255,138,0.08), transparent 18%),
+                #030503;
+}
+
+.landing-nav{
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    padding: 0 2vw;
+    align-items: center;
+}
+
+.landing-nav h3{
+    margin: 0;
+    font-size: 2rem;
+    color: #00ff8a;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 18px rgba(0,255,138,0.35);
+}
+
+.landing-nav button{
+    padding: 12px 32px;
+    font-size: 1rem;
+    background: rgba(0,255,138,0.12);
+    border: 1px solid rgba(0,255,138,0.35);
+    color: #d8ffe0;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-nav button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(0,255,138,0.24);
+}
+
+.landing-hero-text{
+    width: min(760px, 90%);
+    margin: 0 auto 8rem;
+    text-align: center;
+    color: #ecffe8;
+}
+
+.landing-hero-text h1{
+    font-size: clamp(2.8rem, 4vw, 4.2rem);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #b7ffca;
+    text-shadow: 0 0 18px rgba(0,255,138,0.22);
+}
+
+.landing-hero-text p{
+    font-family: 'Work Sans', sans-serif;
+    color: #c9ffd6;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-top: 1.2rem;
+}
+
+.landing-hero-text button{
+    margin-top: 28px;
+    padding: 14px 34px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #00ff8a, #0d4c24);
+    border: none;
+    color: #071d12;
+    border-radius: 999px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-hero-text button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 26px rgba(0,255,138,0.35);
+}
+
