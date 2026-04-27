@@ -1,43 +1,80 @@
-.all-users-page{
+/* Premium Admin Dashboard - Green & Black Glow Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.all-users-page {
+    min-height: 100vh;
     padding: 4vh 2vw;
-
+    background: linear-gradient(135deg, #050f08 0%, #0a1f14 50%, #061210 100%);
+    position: relative;
 }
 
-.all-users-page h3{
-
-
+.all-users-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(0, 255, 138, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 70% 70%, rgba(0, 255, 138, 0.04) 0%, transparent 40%);
+    pointer-events: none;
 }
 
-.all-users{
+.all-users-page h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #00ff8a;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(0, 255, 138, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.all-users {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-   
+    gap: 16px;
+    position: relative;
+    z-index: 1;
 }
 
-.user{
-
+.user {
     display: flex;
-    width: 70%;
+    width: 100%;
+    max-width: 800px;
     justify-content: space-between;
-    border: 1px solid #ee460e5b;
-    padding: 2vh 1.5vw;
-    border-radius: 0.8rem;
+    align-items: center;
+    background: rgba(10, 25, 18, 0.8);
+    border: 1px solid rgba(0, 255, 138, 0.15);
+    padding: 20px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
 }
 
-.user span{
-
-
+.user:hover {
+    background: rgba(0, 255, 138, 0.08);
+    border-color: rgba(0, 255, 138, 0.3);
+    box-shadow: 0 0 25px rgba(0, 255, 138, 0.15);
+    transform: translateX(5px);
 }
 
-.user span b{
+.user span {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user span b {
     margin: 0;
-    font-weight: 500;
-    color: rgb(22, 129, 129);
+    font-weight: 600;
+    color: #00ff8a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
-.user span p{
-
+.user span p {
     margin: 0;
-    color: rgba(22, 95, 129, 0.728);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
 }
