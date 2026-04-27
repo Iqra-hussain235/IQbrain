@@ -1,33 +1,47 @@
-.navbar{
+/* Premium Navbar - Green & Black Glow Theme */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+.navbar {
     height: 10vh;
     align-items: center;
     justify-content: space-between;
     padding-left: 2vw;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    /* background-color: #141414; */
+    padding-right: 2vw;
+    box-shadow: 0 4px 30px rgba(0, 255, 138, 0.1);
+    background: linear-gradient(180deg, rgba(5, 15, 10, 0.98) 0%, rgba(10, 25, 18, 0.95) 100%);
+    border-bottom: 1px solid rgba(0, 255, 138, 0.15);
+    backdrop-filter: blur(10px);
 }
 
-.navbar h3{
-
-    color: #ee4950;
+.navbar h3 {
+    color: #00ff8a;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: 0 0 20px rgba(0, 255, 138, 0.5);
+    letter-spacing: 1px;
 }
 
-.nav-options{
+.nav-options {
     display: flex;
     width: 40%;
     justify-content: space-evenly;
 }
 
-.nav-options p{
+.nav-options p {
     margin: 0;
-    color: rgb(137, 135, 135);
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-.nav-options p:hover{
-
-    color: rgb(57, 57, 57);
-    font-weight: 500;
+.nav-options p:hover {
+    color: #00ff8a;
+    background: rgba(0, 255, 138, 0.1);
+    text-shadow: 0 0 15px rgba(0, 255, 138, 0.4);
 }

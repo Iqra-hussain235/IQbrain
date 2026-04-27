@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 import { Application, Chat, Freelancer, Project, User } from './Schema.js';
 import { Server } from 'socket.io';
 import http from 'http';
@@ -45,7 +45,7 @@ mongoose.connect('mongodb://localhost:27017/Freelancing',{
     
             const {username, email, password, usertype} = req.body;
     
-            const salt = await bcrypt.genSalt();
+            const salt = await bcrypt.genSalt(10);
             const passwordHash = await bcrypt.hash(password, salt);
     
             const newUser = new User({
